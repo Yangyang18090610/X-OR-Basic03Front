@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>User Access</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+    
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body onbeforeunload="handler">
+  <h1>Danh sách người truy cập</h1>
+  <table>
+    <thead>
+      <tr>  
+        <th>Trình duyệt</th>
+        <th>Icon</th>
+        <th>Thời gian truy cập</th>
+      </tr>
+    </thead>
+    <tbody id="user-list">
+    </tbody>
+  </table>
+  <script src="app.js"></script>
+</body>
+</html>
